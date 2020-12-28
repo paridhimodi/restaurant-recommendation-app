@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant recommeder</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+
+  background:wite
+  color: black;
+  font-size: 30px;
+}
+
+
+/* Page Content */
+.content {padding:20px;}
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(to right, rgba(210,70,10,0), rgba(210,70,10,1));
+}
+#hr1{padding: 10px;
+  text-align: center;
+  text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+  color: black;
+  font-size: 30px;
+  }
+#hr2{padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #000000;
+  color: black;
+  font-size: 20px;
+  }
+</style>
+</head>
+<body id="grad1" >
+
+<title>Restaurant recommendation system</title>
+
+
+
+<div class="header">
+    <h1 style="text-align: center">Restaurant recommender</h1>
+    <p>I can tell you which restaurant you may love</p>
+</div>
+<div class="content">
+    <div class="form">
+        <form action="/predict" method="POST">
+        <label for="name" >Choose a restaurant you previously loved:</label>
+        <select id="name" name="name">
+            <option value="jalsa">jalsa</option>
+            <option value="spice elephant">spice elephant</option>
+            <option value="grand village">grand village</option>
+            <option value="floured-baked with love">floured-baked with love</option>
+            <option value="cafe nova">cafe nova</option>
+            <option value="mane thindi">mane thindi</option>
+            <option value="kotian karavali restaurant">kotian karavali restaurant</option>
+            <option value="cakes & slices">cakes & slices</option>
+            <option value="timepass dinner">timepass dinner</option>
+            <option value="onesta">onesta</option>
+            <option value="the coffee shack">the coffee shack</option>
+            <option value="woodee pizza">woodee pizza</option>
+            <option value="cafe coffee day">cafe coffee day</option>
+            <option value="sweet truth">sweet truth</option>
+            <option value="faasos">faasos</option>
+            <option value="fast and fresh">fast and fresh</option>
+        </select>
+            <input type="submit" value="predict">
+
+            <h3  id="hr1" > {{names}} </h3>
+            <h3 id="hr2"> {{cuisines}} </h3>
+            <h3 id="hr2"> {{rating}} </h3>
+            <p>©PARIDHI MODI</p>
+
+        </form>
+    </div>
+</div>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
