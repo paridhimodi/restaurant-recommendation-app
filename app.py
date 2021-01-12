@@ -82,7 +82,7 @@ def main():
 
 if __name__ == "__main__":
     # application.run(debug=True)
-    app.run(host='127.0.0.1', port=8000, debug=True)
+    app.run(host='127.0.0.1', port=5000, debug=True)
 # port = int(os.getenv("PORT", 8000))
 # if __name__ == "__main__":
 #     application.run(port=port, debug=True)
