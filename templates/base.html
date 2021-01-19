@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+</style>
+</head>
+<body>
+
+<title>Restaurant recommendation system</title>
+
+
+
+<div class="header">
+    <h1 style="text-align: center">Restaurant recommender</h1>
+    <p>I can tell you which restaurant you may love</p>
+</div>
+<div class="content">
+    <div class="form">
+        <form action="/predict" method="POST">
+        <label for="name">Choose a restaurant you previously loved:</label>
+        <select id="name" name="name">
+            <option value="jalsa">jalsa</option>
+            <option value="spice elephant">spice elephant</option>
+            <option value="grand village">grand village</option>
+            <option value="floured-baked with love">floured-baked with love</option>
+            <option value="cafe nova">cafe nova</option>
+            <option value="mane thindi">mane thindi</option>
+            <option value="kotian karavali restaurant">kotian karavali restaurant</option>
+            <option value="cakes & slices">cakes & slices</option>
+            <option value="timepass dinner">timepass dinner</option>
+            <option value="onesta">onesta</option>
+            <option value="the coffee shack">the coffee shack</option>
+            <option value="woodee pizza">woodee pizza</option>
+            <option value="cafe coffee day">cafe coffee day</option>
+            <option value="sweet truth">sweet truth</option>
+            <option value="faasos">faasos</option>
+            <option value="fast and fresh">fast and fresh</option>
+        </select>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
+
